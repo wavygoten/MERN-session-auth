@@ -112,7 +112,7 @@ router.post("/forgot", async (req, res, next) => {
 		const mailOptions = {
 			from: `${process.env.EMAIL_ADDRESS}`,
 			to: `${user.email}`,
-			subject: "Reset Password Gravy Proxies",
+			subject: "Reset Password",
 			text:
 				"You are receiving this email because you (or someone else perhaps) has requested to reset your password for your account.\n\n" +
 				"Please click on the following link within one hour to reset your password.\n\n" +
